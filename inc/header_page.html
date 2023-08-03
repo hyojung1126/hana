@@ -12,18 +12,26 @@
         </div>
 
         <div class="header_icons">
-            <a href="#">
+            <div>
                 <div class="bg_circle"></div>
                 <i class="xi-plus"></i>
-            </a>
-            <a href="#">
+            </div>
+            <div class="glob">
                 <div class="bg_circle"></div>
                 <i class="xi-globus"></i>
-            </a>
-            <a href="#">
+            </div>
+            <div>
                 <div class="bg_circle"></div>
                 <i class="xi-bars"></i>
-            </a>
+            </div>
+            <ul class="globus_popup">
+                <li>KOR</li>
+                <li>ENG</li>
+                <li>CHN</li>
+                <li>JPN</li>
+                <li>INA</li>
+                <li>VIE</li>
+            </ul>
         </div>
 
         <div class="scrollBar">
@@ -258,6 +266,11 @@
   // header_icon hover시 효과
   $('.header_icons a').hover(function(){
       $('.header_icons .bg_circle').eq($(this).index()).toggle()
+  })
+
+  // globus_popup
+  $('.glob').click(function(){
+    $('.globus_popup').slideToggle('fast')
   })
 
   // gnb
