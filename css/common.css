@@ -213,6 +213,110 @@
     text-decoration: underline;
 }
 
+/* main_slider(swiper) */
+.swiper {
+    position: absolute;
+    top: 0; left: 0;
+
+    width: 100%;
+    height: 640px;
+    margin: 0 auto;
+    background: #009591;
+}
+
+.swiper-slide {
+  background: #009591;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 124px; left: 160px;
+  display: block;
+  width: 612px; height: 300px;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.swiper-slide.first {
+  background-image: url('../images/main_slide_1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide.second {
+  background-image: url('../images/main_slide_2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 500px; left: 200px;
+    width: 130px; height: 32px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0000004d;
+    border-radius: 32px;
+    z-index: 10;
+}
+
+.buttons i {
+    color: #fff;
+}
+
+.buttons div {
+    position: relative;
+}
+
+.buttons div::after {
+    content: "";
+    display: none;
+}
+
+.buttons i.xi-angle-left::before, .buttons i.xi-angle-right::before {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+div.swiper-pagination {
+    position: absolute;
+    top: 6px; left: 13px;
+    z-index: 9;
+}
+
+div.swiper-button-prev, div.swiper-button-next {
+    margin: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+div.swiper-button-next {
+    margin-left: 100px;
+}
+
+.play_btns {
+    position: relative;
+    top: -7px; left: 20px;
+}
+
+.play_btns i {
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.play_btns i.active {
+    display: block;
+}
+
 
 /* main_contents */
 .main_contents {
@@ -227,7 +331,6 @@
     cursor: pointer;
 }
 
-/* 위치 밎 z-index 수정하기 */
 .content_line1 {
     position: relative;
     top: 0;

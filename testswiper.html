@@ -126,8 +126,8 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="../images/main_slide_1_text.png" alt=""></div>
-      <div class="swiper-slide"><img src="../images/main_slide_2_text.png" alt=""></div>
+      <div class="swiper-slide first"><img src="../images/main_slide_1_text.png" alt=""></div>
+      <div class="swiper-slide second"><img src="../images/main_slide_2_text.png" alt=""></div>
     </div>
     <div class="buttons">
         <div class="swiper-button-prev"></div>
@@ -147,7 +147,7 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
         loop:true,
-		loopedSlides: 1,
+		    loopedSlides: 2,
         autoplay: {
         delay: 4000,
         disableOnInteraction: false,

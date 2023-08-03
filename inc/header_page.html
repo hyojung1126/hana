@@ -234,6 +234,7 @@
         $(".scrollProgressBar").css('width',scrollProgress)
         $(".gnb_tab a").css('color','#000')
 
+
       } else {
         $(".header").removeClass("fixed");
         $(".header i").css('color','#fff')
@@ -271,11 +272,10 @@
 
       $('.gnb_dim').show()
 
-    //   $(this).css('color','#009591')
   },function(){
       $('.gnb_contents > ul').removeClass('active')
       
-      $(".header").removeClass("fixed");
+      $(".header").removeClass("fixed")
       $(".header i").css('color','#fff')
       $(".header .logo a").removeClass('active')
       $(".header .logo a").eq(1).addClass('active')
@@ -287,13 +287,13 @@
   $('.gnb_tab a').hover(function(){
     $(this).css('color','#009591')
   },function(){
-    $(this).css('color','#fff')
+    $(this).css('color','inherit')
   })
 
   $('.gnb_contents > ul').hover(function(){
     $('.gnb_tab a').eq($(this).index()).css('color','#009591')
   },function(){
-    $('.gnb_tab a').eq($(this).index()).css('color','#fff')
+    $('.gnb_tab a').eq($(this).index()).css('color','inherit')
   })
 
 </script>
