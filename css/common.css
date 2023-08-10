@@ -769,7 +769,7 @@ div.swiper-button-next {
 }
 
 .footer .f_info {
-    padding: 40px 0 50px;
+    padding: 40px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
